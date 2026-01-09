@@ -4,6 +4,7 @@
 :root {
     --primary-color : #30B868;
     --secondary-color: #469165;
+    --tertiary-color: #001931;
 }
 
 body {
@@ -20,10 +21,7 @@ body {
     list-style: none;
 }
 
-.bg-black {background-color: #000000;}
-.bg-white {background-color: #ffffff;}
-.color-black {color: #000000;}
-.color-white {color: #ffffff;}
+/* General Section End & Header Section Start*/
 
 header {
     width: 100%;
@@ -54,76 +52,220 @@ nav ul li a {
     color: #000000;
 }
 
-.green-button {
-    background-color: var(--primary-color);
+.button {
     color: #ffffff;
     padding: 12px 16px;
     border-radius: 4px;
     font-weight: 600;
 }
 
+.green-button {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
 .green-button:hover{
     background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
-.hero{
-    width: 1600px;
-    padding: 70px 120px 134px 120px;
+.white-button {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.white-button:hover {
+    color: #ececec;
+    border: 1px solid #ececec;
+}
+
+/*Header Section End & Hero section start*/
+
+.hero {
     background-image: url(../img/hero-bg.png);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 120px 134px 120px;
+}
+
+.hero .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero .container .badge {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 16px;
+    border-radius: 20px;
+}
+
+.hero .container .badge span {
+    line-height: 16px;
+}
+
+.hero .container .badge .dot {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        #30B868 0 30%,
+        #30b869b6 30% 55%,
+        #30b8693b 55% 100%
+    );
+}
+
+.hero .container h1 {
+    font-size: 72px;
+    text-align: center;
+}
+
+.hero .container h1 .highlight {
+    color: var(--primary-color)
+}
+
+.hero .container p{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero .container .cta-group {
+    margin-top: 12px;
+    display: flex;
+    gap: 16px;
     justify-content: center;
 }
 
-.hero .eaAlert {
-    background-color: #ffffff;
-    padding: 8px;
-    border-radius: 18px;
-    width: 230px;
+.hero .container .cta-group a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
 }
 
-.hero .eaAlert p {
-    color: var(--primary-color);
-    font-weight: 500;
-    line-height: 19px;
-    width: 185px;
+.hero .container .cta-group a span {
+    height: 24px;
 }
 
-.hero .eaAlert ul {
+/*Hero section end & Notes section start*/
+
+.notes{
+    padding: 80px 120px 0 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fafafa;
+    color: var(--tertiary-color);
+}
+
+.notes h1 {
+    font-size: 48px;
+}
+
+.notes .cards {
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.notes .cards .card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.notes .cards .card .icon {
+    background-color: #F95555;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    background-color: #f0f0f0;
-    height: 16px;
-    weight: 16px;
+    margin-top: 50px;
 }
 
-.hero .eaAlert ul li {
-    border-radius: 50%;
-    position: absolute;
-    background-color: var(--primary-color);
+.notes .cards .card .icon img {
+    width: 32px;
+    height: 32px;
 }
 
-.hero .eaAlert ul .c-1 {
-    width: 6px;
-    height: 6px;
-    z-index: 3;
+.notes .cards .card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
 }
-.hero .eaAlert ul .c-2 {
-    width: 12px;
-    height: 12px;
-    z-index: 2;
-    opacity: 40%;
+
+.notes .cards .card p {
+    text-align: center;
 }
-.hero .eaAlert ul .c-3 {
-    width: 16px;
-    height: 16px;
-    z-index: 1;
-    opacity: 20%;
+
+/*Notes section end & Brain Section start*/
+
+.brain {
+    padding: 120px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.brain .main-img {
+    border-radius: 12px;
+    width: 600px;
+}
+
+.brain .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--tertiary-color);
+
+}
+
+.brain .container h4 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.brain .container h1 {
+    text-transform: capitalize;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.brain .container p {
+    color: #627382;
+}
+
+.brain .container .ck-points {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.brain .container .ck-points .point {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
 }
