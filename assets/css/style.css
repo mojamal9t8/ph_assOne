@@ -299,3 +299,15 @@ nav ul li a {
     color: #627382;
 }
 
+/*End Early Access Section & Start Footer Section*/
+
+footer {
+    padding: 120px 120px 30px 120px;
+    background-color: var(--tertiary-color);
+    color: #ffffff;
+}
+
+.copyright {
+    border-top: 1px solid #627382;
+    padding-top: 30px;
+}
