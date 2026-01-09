@@ -296,7 +296,12 @@ nav ul li a:hover {
 
 .ea .container .button {
     margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
+
+.ea .container .button span {height: 20px;}
 
 .ea .container p {
     color: #627382;
