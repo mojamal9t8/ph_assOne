@@ -10,7 +10,6 @@
 body {
     font-family: 'Inter', sans-serif;
     width: 1600px;
-    border: 1px solid red;
 }
 
 *, *::before, *::after {
@@ -52,6 +51,10 @@ nav ul li a {
     color: #000000;
 }
 
+nav ul li a:hover {
+    color: #383838;
+}
+
 .button {
     color: #ffffff;
     padding: 12px 16px;
@@ -74,8 +77,8 @@ nav ul li a {
 }
 
 .white-button:hover {
-    color: #ececec;
-    border: 1px solid #ececec;
+    color: #e5e7ebc7;
+    border: 1px solid #e5e7ebc7;
 }
 
 /*Header Section End & Hero section start*/
@@ -307,7 +310,59 @@ footer {
     color: #ffffff;
 }
 
+footer .main-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+footer .main-footer .logo {
+    height: 60px;
+}
+
+footer .main-footer .social {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+}
+
+footer .main-footer .social p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+footer .main-footer .social ul {
+    display: flex;
+    gap: 16px;
+}
+
+footer .main-footer .social ul li {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .main-footer .social ul li:hover {
+    background-color: #dbdbdb;
+}
+
+footer .main-footer .social ul li a {
+    height: 12px;
+    line-height: 12px;
+}
+
+footer .main-footer .social ul li a img {
+    height: 12px;
+}
+
 .copyright {
-    border-top: 1px solid #627382;
+    border-top: 1px solid #e5e7eb21;
     padding-top: 30px;
+    color: #fafafa;
+    text-align: center;
 }
