@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --primary-color : #30B868;
-    --secondary-color: #469165;
+    --primary-color : #469165;
+    --secondary-color: #30B868;
     --tertiary-color: #001931;
 }
 
@@ -269,3 +269,33 @@ nav ul li a {
     gap: 6px;
     font-weight: 500;
 }
+
+/*Brain Section End & Early Access Section Start*/
+
+.ea {
+    padding: 0 120px 120px 120px;
+    text-align: center;
+}
+
+.ea .container {
+    background-color: #f7f6f2;
+    padding: 80px 40px;
+    color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.ea .container h1 {
+    text-transform: capitalize;
+}
+
+.ea .container .button {
+    margin-top: 8px;
+}
+
+.ea .container p {
+    color: #627382;
+}
+
